@@ -1,39 +1,88 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #fafafa;
+    background: #f8f8f8;
+    color: #333;
 }
 
+/* Header Section */
 header {
     text-align: center;
-    padding: 30px;
-    background: #ff7043;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ff7043, #ff5722);
     color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+header h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Search Section */
 .search-section {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px auto;
 }
 
 .search-section input {
-    padding: 10px;
+    padding: 12px 20px;
     width: 60%;
+    max-width: 600px;
     font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    transition: 0.3s;
 }
 
+.search-section input:focus {
+    outline: none;
+    border-color: #ff7043;
+    box-shadow: 0 0 10px rgba(255,112,67,0.3);
+}
+
+/* Recipe List */
 .recipe-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 40px;
 }
 
+/* Recipe Card */
 .recipe-card {
     background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
 }
 
+.recipe-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff5722;
+}
+
+.recipe-card p {
+    margin: 5px 0;
+    font-size: 15px;
+}
