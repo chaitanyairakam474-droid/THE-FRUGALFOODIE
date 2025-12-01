@@ -1,1 +1,21 @@
+[
+    {
+        "name": "Masala Maggie",
+        "price": "₹40",
+        "ingredients": "Noodles, masala, vegetables",
+        "time": "10 minutes"
+    },
+    {
+        "name": "Aloo Paratha",
+        "price": "₹30",
+        "ingredients": "Wheat flour, potato, spices",
+        "time": "20 minutes"
+    },
+    {
+        "name": "Egg Fried Rice",
+        "price": "₹50",
+        "ingredients": "Rice, eggs, veggies, soy sauce",
+        "time": "15 minutes"
+    }
+]
 
